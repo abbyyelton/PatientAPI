@@ -1,4 +1,18 @@
-# senior-tech-interview
+# Patient Backend API
+
+This project contains a login controller and a patient controller. Bearer token authenitcation is used. There are two valid emails that can be use for log in:
+`test@email.com` and `test1@email.com`. Once a user logs in, a token is stored in the 'database' mapped to their email. This token must match any further requests 
+from the user. With the token, they can access the /patient and /patient/{patientId} endpoints. When the patients are returned to the user, a safe guid is
+returned instead of the true guid. This mapping is also stored in the 'database.' 
+
+## What should be added for a "real" project
+
+ * Unit tests
+ * Real authentication/authorization
+ * Automapper or similar for mapping guids/models if there are to be more
+ * Real database/data storage
+
+## Requirements
 
 API:
 1. Create a new .NET project that will host three endpoints:
