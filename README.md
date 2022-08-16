@@ -5,6 +5,9 @@ This project contains a login controller and a patient controller. Bearer token 
 from the user. With the token, they can access the /patient and /patient/{patientId} endpoints. When the patients are returned to the user, a safe guid is
 returned instead of the true guid. This mapping is also stored in the 'database.' 
 
+## To run
+Open in Visual Studio, build, and run.
+
 ## What should be added for a "real" project
 
  * Unit tests
